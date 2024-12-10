@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-color: #1f1f1f;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* This is for the landing page */
+.landing{
+    padding: 20px;
+    background-color: #1f1f1f;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.exit-icon{
+    width: 35px;
+}
+
+/* Exit Icon */
+.exit-icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.exit-icon::before,
+.exit-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 5px; 
+    background-color: #fff;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+.exit-icon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.exit-icon:hover::before,
+.exit-icon:hover::after {
+    background-color: #bbbbba;
+}
+
+.logo{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .texts{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 0;
+}
+
+.texts h1{
+    font-family: 'Libre Baskerville';
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Menu items */
+.menu-items {
+    text-align: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    margin: 15px 0;
+}
+
+.menu-items a:hover {
+    color: #bbbbba;
+}
+
+.divider {
+    width: 60%;
+    height: 3px;
+    background-color: #898989;
+}
