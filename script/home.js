@@ -1,18 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll(".footer-nav a").forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = e.target.getAttribute("href").slice(1);
-        const targetSection = document.getElementById(targetId);
-  
-        if (targetSection) {
-          window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: "smooth",
-          });
-        }
-      });
+
+    const headerHeight = document.querySelector("header").offsetHeight;
+    window.scrollTo({
+      top: offset - headerHeight,
+      behavior: "smooth",
     });
   
     // Fade-in animation for sections
