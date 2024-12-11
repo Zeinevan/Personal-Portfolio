@@ -7,9 +7,14 @@ body {
     color: #333;
 }
 
+
 /* This is for the landing page */
 .landing{
     padding: 20px;
+    background-image: url(http://127.0.0.1:5500/res/wallpaper_q.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #8A7F6F;
     max-width: 100%;
     min-height: 775px;
@@ -24,16 +29,6 @@ body {
 }
 .menu{
     width: 95%;
-}
-.contact-me{
-    font-size: 20px;
-    color: #bbbbba;
-    cursor: pointer;
-    width: 5%;
-    min-width: 130px;
-}
-.contact-me:hover{
-    color:#5c5247;
 }
 
 /* Hamburger Menu */
@@ -50,7 +45,7 @@ body {
     display: block;
     width: 100%; 
     height: 5px; 
-    background-color: #333; 
+    background-color: white; 
     border-radius: 5px; 
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
@@ -78,22 +73,23 @@ body {
 }
 
 .texts h1{
+    color: white;
     font-family: 'Libre Baskerville';
     margin: 0;
     font-size: 4rem;
     font: 400;
 }
 .texts h3{
-    color: #bbbbba;
+    color: white;
     font-weight: 50;
     font-size: 25px;
-    font-family: 'Inter';
+    font-family: 'Albert Sans';
     margin: 0;
     margin-bottom: 100px;
 }
 .texts p{
-    font-family: 'Times New Roman', Times, serif;
-    color: #bbbbba;
+    font-family: 'Albert Sans';
+    color: white;
     font-size: 30px;
     margin: 0;
 }

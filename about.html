@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joevan De Jesus</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/navbar_footer.css">
+        <link rel="icon" href="res/logo.png" type="image/x-icon">
+    </head>
+    
+    <body>
+    
+        <header>
+            <div class="nav-content">
+                <img src="res/logo.png" alt="Logo">
+            </div>
+        </header>
+    
+        <section class="top">
+            <div class="top-contents">
+
+              <div class="main-content">
+                <h1>About Me</h1>
+              </div>
+
+              <div class="sub-content">
+                <h3><b>I am a web designer and developer based in C.N. Philippines</b></h3>
+                <p>I am a 2nd year BSIS Student and I am still learning and aspiring to be a professional web designer and developer</p>
+              </div>
+            
+            </div>
+        
+            <div class="top-image">
+              <img src="res/me2x2.png" alt="">
+            </div>
+
+            <div class="divider"></div>
+        
+        </section>
+    
+        <!-- ~~~~~~~~~~pie~~~~~~~~~~ -->
+
+        <section class="pie-chart">
+            <div class="container">
+                <div class="section-description">
+                    <h3>Coder</h3>
+                    <ul>
+                        <li>Front-end development</li>
+                        <li>HTML / CSS</li>
+                        <li>JavaScript (just a li'l bit)</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+        
+                <!-- Image container for chart -->
+                <div class="pie">
+                    <img src="res/pie-chart.png" alt="Coder vs Designer Chart">
+                </div>
+        
+                <div class="section-description">
+                    <h3>Designer</h3>
+                    <ul>
+                        <li>UI design</li>
+                        <li>UX design</li>
+                        <li>Interaction design</li>
+                        <li>Graphic design</li>
+                        <li>Visual design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ~~~~~~~~~~bar-graph~~~~~~~~~~ -->
+         <section class="bar-graph">
+            <div class="chart-container">
+                <div class="chart-title">My Skills</div>
+                <div class="chart">
+                    <div class="chart-levels">
+                        <div>Master</div>
+                        <div>Expert</div>
+                        <div>Skilled</div>
+                        <div>Amateur</div>
+                        <div>Learner</div>
+                        <div>Beginner</div>
+                    </div>
+                    <div class="chart-bar">
+                        HTML<br><span class="chart-label">/CSS</span>
+                    </div>
+                    <div class="chart-bar">
+                        DESIGN
+                    </div>
+                    <div class="chart-bar">
+                        FIGMA
+                    </div>
+                    <div class="chart-bar">
+                        SLEEPING
+                    </div>
+                    <div class="chart-bar">
+                        DRAWING
+                    </div>
+                </div>
+            </div>
+            <script>
+                const container = document.querySelector('.chart-container');
+                container.addEventListener('wheel', (event) => {
+                    if (event.deltaY !== 0 && container.scrollWidth > container.clientWidth) {
+                        event.preventDefault();
+                        container.scrollLeft += event.deltaY;
+                    }
+                });
+            </script>
+
+         </section>
+        <!-- ~~~~~~~~~~last two hahaha~~~~~~~~~~ -->
+
+        <section class="characteristics_1">
+            <div class=" char-image">
+                <img src="res/palette.png" alt="">
+            </div>
+
+            <div class="char-text">
+                <div class="char-header">
+                    <h2>Random facts</h2>
+                </div>
+
+                <div class="char-char">
+                    <ul>
+                        <li>I love pets</li>
+                        <li>My favorite bird is Owl</li>
+                        <li>I love cooking and of course eating</li>
+                        <li>I like watching Amines and reading Manhwas</li>
+                        <li>I draw some portraits for my free time</li>
+                        <li>I am into photography</li>
+                        <li>I also enjoy being a web designer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="characteristics_2">
+            <div class=" char-image">
+                <img src="res/camera.png" alt="">
+            </div>
+
+            <div class="char-text">
+                <div class="char-header">
+                    <h2>Unique Selling Points</h2>
+                </div>
+
+                <div class="char-char">
+                    <ul>
+                        <li>simplicity</li>
+                        <li>aesthetic</li>
+                        <li>problem solving</li>
+                        <li>design</li>
+                        <li>front-end</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="mailto:joevandejesus40@gmail.com" target="_blank"><img src="res/email-icon.png" alt="Email"></a>
+                    <a href="https://www.facebook.com/joe.van.284923" target="_blank"><img src="res/facebook-icon.png" alt="Phone"></a>
+                    <a href="tel:+639973859804"><img src="res/phone-icon.png" alt="Other"></a>
+                </div>
+                <nav class="footer-nav">
+                  <a href="Home.html">Home</a>
+                  <a href="#">About</a>
+                  <a href="portfolio.html">Portfolio</a>
+                  <a href="tools.html">Tools</a>
+                  <a href="contacts.html">Contacts</a>
+                </nav>
+            </div>
+        
+            <div class="copyright">
+              <p>&copy; 2024 Joevan De Jesus. All Rights Reserved.</p>
+            </div>
+            
+        </footer>
+        <script src="script/home.js"></script>
+    </body>
+
+</html>
