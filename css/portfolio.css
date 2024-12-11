@@ -194,3 +194,107 @@ body {
     height: 3px;
     background-color: #898989;
 }
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+/* General Transition */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Menu Animation */
+.hamburger-menu:hover span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+.hamburger-menu:hover span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu:hover span:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Logo Animation */
+.logo img {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Text Fade-in Animation */
+.landing .texts h1,
+.landing .texts h3,
+.landing .texts p {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+.landing .texts h1 {
+    animation-delay: 0.5s;
+}
+.landing .texts h3 {
+    animation-delay: 1s;
+}
+.landing .texts p {
+    animation-delay: 1.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Portfolio Image Hover Effect */
+.container .image img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.container .image img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Screenshot Hover Effect */
+.container_2 .screenshots img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container_2 .screenshots img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Divider Animation */
+.portfolio .divider {
+    animation: widthExpand 1.5s ease-in-out forwards;
+    width: 0;
+}
+@keyframes widthExpand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 93%;
+    }
+}
+
+/* Footer Social Icon Hover Effect */
+.social-icons img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

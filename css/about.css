@@ -202,11 +202,11 @@ body {
     line-height: 1.2;
     overflow: hidden;
 }
-.chart-bar:nth-child(2) { height: 190px; } /* HTML/CSS */
-.chart-bar:nth-child(3) { height: 150px; } /* DESIGN */
-.chart-bar:nth-child(4) { height: 100px; } /* FIGMA */
-.chart-bar:nth-child(5) { height: 250px; } /* SLEEPING */
-.chart-bar:nth-child(6) { height: 290px; } /* DRAWING */
+.chart-bar:nth-child(2) { height: 0px; } /* HTML/CSS */
+.chart-bar:nth-child(3) { height: 0px; } /* DESIGN */
+.chart-bar:nth-child(4) { height: 0px; } /* FIGMA */
+.chart-bar:nth-child(5) { height: 0px; } /* SLEEPING */
+.chart-bar:nth-child(6) { height: 0px; } /* DRAWING */
 .chart-label {
     margin-top: 5px;
 }
@@ -287,3 +287,55 @@ body {
 .char-image img{
     width: 100%;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* General hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade-in animation */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Bar graph animation */
+.chart-bar {
+    width: 18%;
+    background-color: #282828;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    font-size: 12px;
+    line-height: 1.2;
+    overflow: hidden;
+    height: 0; /* Initially hide bars */
+    transition: height 1s ease-in-out;
+}
+
+.chart-bar.visible {
+    height: auto;
+}
+
+/* Sliding image animation */
+.char-image img {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.char-image img.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.chart-bar:nth-child(2) { height: 190px; } /* HTML/CSS */
+.chart-bar:nth-child(3) { height: 150px; } /* DESIGN */
+.chart-bar:nth-child(4) { height: 100px; } /* FIGMA */
+.chart-bar:nth-child(5) { height: 250px; } /* SLEEPING */
+.chart-bar:nth-child(6) { height: 290px; } /* DRAWING */
