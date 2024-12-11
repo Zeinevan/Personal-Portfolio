@@ -77,32 +77,35 @@ body {
     }
 }
 
-.divider {
+.top .divider {
     border-radius: 20px;
     width: 100%;
     height: 3px;
     background-color: #898989;
 }
 
+/* ~~~~~~~~~~TOOLS~~~~~~~~~~ */
 
-/* ~~~~~~~~~~PORTFOLIO~~~~~~~~~~~ */
-
-.portfolio{
-    padding-bottom: 0 !important;
-    background-color: #5c5247;
+.tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100vw;
     min-height: 775px;
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
-
+    
 .container{
-    padding: 15px;
+    padding-top: 30px;
+    width: 80%;
+    padding-left: 90px;
+    margin-bottom: 50px;
 }
 
 .container .title{
     padding: 20px;
-    padding-left: 45px;
+    padding-left: 30px;
     font-size: clamp(1rem, 2vw, 3rem);
 }
 
@@ -111,64 +114,60 @@ body {
     margin: 0;
 }
 
-.container .content{
-    padding-top: 0!important;
-    padding: 15px;
+.tools-content{
     display: flex;
+    justify-content: left;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.container .content{
+    margin: 20px;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 }
 
-
 .container .image{
-    min-width: 250px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.632);
+    min-width: 92px;
+    min-height: 92px;
+    width: 92px;
+    height: 92px;
+    padding: 5px;
     margin-top: 0 !important;
     margin: 15px;
     margin-bottom: 0 !important;
-    width: 55%;
+    width: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
 }
 
 .container .image img{
-    border-radius: 30px;
     width: clamp(100%, 70%, 60%);
-    min-width: 300px;
-    max-width: 800px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
+    width: 90px;
+    height: 90px;
 
 }
 
 .container .text{
     font-family: 'Albert Sans', sans-serif;
     flex: 1;
-    min-width: 350px;
-    width: 40%;
+    width: 80%;
     margin: 15px;
     text-align: justify;
 }
 
-.container .description{
-    width: 100%;
+.container h1{
+    width: 150px;
 
 }
 
-
-.container_2{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;;
-}
-
-.container_2 .screenshots{
-    width: 18%;
-    min-width: 250px;
-    margin: 10px;
-}
-
-.container_2 .screenshots img{
-    border-radius: 15px;
-    max-width: 250px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
+.tools .divider {
+    border-radius: 20px;
+    max-width: 80%;
+    width: 80% !important;
+    height: 3px;
+    background-color: #898989;
 }
