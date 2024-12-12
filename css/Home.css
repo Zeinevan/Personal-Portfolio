@@ -194,7 +194,6 @@ body {
 }
 
 .container .image {
-    border: solid;
     min-width: 250px;
     margin-top: 0 !important;
     margin: 15px;
