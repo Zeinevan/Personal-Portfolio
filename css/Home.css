@@ -348,3 +348,104 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* Small devices (320px to 360px) */
+@media (max-width: 360px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    .landing .texts h1 {
+        font-size: 2.5rem; /* Title size */
+    }
+
+    .landing .texts h3 {
+        font-size: 1.5rem; /* Subtitle size */
+    }
+
+    .landing .texts p {
+        font-size: 1.2rem; /* Description size */
+    }
+
+    .home_2 .texts h1 {
+        font-size: 2.5rem; /* Title size for home_2 section */
+    }
+
+    .home_2 .texts h3 {
+        font-size: 1.3rem; /* Subtitle size */
+    }
+
+    .home_2 .texts p {
+        font-size: 1.1rem; /* Description size */
+    }
+
+    /* Other responsive styles for small screens */
+}
+
+/* Medium devices (375px to 414px) */
+@media (max-width: 414px) {
+    body {
+        font-size: 16px; /* Adjust base font size */
+    }
+
+    .landing .texts h1 {
+        font-size: 3rem; /* Title size */
+    }
+
+    .landing .texts h3 {
+        font-size: 1.8rem; /* Subtitle size */
+    }
+
+    .landing .texts p {
+        font-size: 1.5rem; /* Description size */
+    }
+
+    .home_2 .texts h1 {
+        font-size: 3rem; /* Title size for home_2 section */
+    }
+
+    .home_2 .texts h3 {
+        font-size: 1.6rem; /* Subtitle size */
+    }
+
+    .home_2 .texts p {
+        font-size: 1.3rem; /* Description size */
+    }
+
+    /* Other responsive styles for medium screens */
+}
+
+/* Large devices (480px and up) */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Adjust base font size */
+    }
+
+    .landing .texts h1 {
+        font-size: 4rem; /* Title size */
+    }
+
+    .landing .texts h3 {
+        font-size: 2rem; /* Subtitle size */
+    }
+
+    .landing .texts p {
+        font-size: 1.8rem; /* Description size */
+    }
+
+    .home_2 .texts h1 {
+        font-size: 4rem; /* Title size for home_2 section */
+    }
+
+    .home_2 .texts h3 {
+        font-size: 2rem; /* Subtitle size */
+    }
+
+    .home_2 .texts p {
+        font-size: 1.6rem; /* Description size */
+    }
+
+    /* Other responsive styles for large screens */
+}
