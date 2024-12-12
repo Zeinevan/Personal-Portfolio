@@ -288,6 +288,55 @@ body {
     width: 100%;
 }
 
+/* ~~~~~~~~~~RESUME~~~~~~~~~~ */
+
+.resume-section{
+    font-family: 'Albert Sans';
+    padding: 20px;
+    width: 100%;
+}
+.section-title{
+    font-size: 2rem;
+    text-align: center;
+}
+.resume-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.resume-vordl{
+    min-width: 300px;
+    font-size: 1.5rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+.block{
+    padding: 20px;
+    background-color: #282828;
+    font-weight: bold;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: clamp(200px, 40%, 400px);
+    
+}
+
+.block a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* General hidden state */
 .hidden {

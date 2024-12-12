@@ -7,6 +7,12 @@ body {
 }
 
 /* ~~~~~~~~~~~~~TOP~~~~~~~~~~~~~ */
+header{
+    background-image: url(http://127.0.0.1:5500/res/wallpaper_q.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .top {
     display: flex;
     flex-wrap: wrap;
@@ -177,4 +183,68 @@ body {
         max-width: 300px;
         margin: 0 auto; 
     }
+}
+
+/* Footer Social Icon Hover Effect */
+.social-icons img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply animations for elements with the 'reveal' class */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide-in from left or right for portfolio sections */
+.container .image {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.container .image.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.container .text {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.container .text.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Zoom effect for screenshots */
+.container_2 .screenshots img {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.container_2 .screenshots img:hover {
+    transform: scale(1);
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
 }
