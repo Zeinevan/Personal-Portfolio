@@ -13,6 +13,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .top {
 
     display: flex;
@@ -30,6 +31,8 @@ header{
 }
 
 .top-contents {
+    min-width: 350px;
+
     flex: 1;
     width: 70%;
     box-sizing: border-box;
@@ -55,6 +58,8 @@ header{
 }
 
 .top-image {
+    min-width: 350;
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -68,7 +73,6 @@ header{
     max-width: 300px; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
 }
-
 /* Ensure the elements take up full width when wrapped */
 @media screen and (max-width: 768px) {
     .top-contents, 
@@ -139,10 +143,9 @@ header{
 .container .image{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.632);
-    min-width: 92px;
-    min-height: 92px;
-    width: 92px;
-    height: 92px;
+    width: clamp(70px, 2vw, 90px);
+    min-width: 75px;
+    min-height: 75px;
     padding: 5px;
     margin-top: 0 !important;
     margin: 15px;
@@ -244,6 +247,84 @@ html {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+/* Small devices (320px to 440px) */
+@media (max-width: 440px) {
+    body {
+        width: 100% !important;
+        font-size: 14px;
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        gap: 20px;
+    }
+
+    .top-contents .main-content h1{
+        font-size: 2rem!important;
+        margin-bottom: 20px;
+    }
+
+    .top-contents .sub-content h3{
+        font-size: 1.5rem!important;
+    }
+
+    .top-contents .sub-content p{
+        font-size: 1rem!important;
+    }
+    .top-image {
+        width: 200px;
+    }
+
+    
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    .container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .tools-content{
+        padding: 0;
+    }
+
+    .content{
+        /* border: solid; */
+        max-width: 100%;
+        gap: 9px;
+    }
+
+    .container .image{
+        margin: 0;
+        max-width: 70px!important;
+        max-height: 70px!important;
+    }
+
+    .container .image img{
+        max-width: 70px!important;
+        max-height: 70px!important;
+    }
+
+    .content .text{
+        width: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        /* border: solid; */
+        margin: 0;
+    }
+
+    .content .text{
+        font-size: 1rem;
     }
 }
 

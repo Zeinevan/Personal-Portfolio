@@ -379,6 +379,9 @@ html {
     .top-contents .sub-content p{
         font-size: 1rem!important;
     }
+    .top-image {
+        width: 200px;
+    }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     .portfolio .container{
