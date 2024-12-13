@@ -15,6 +15,7 @@ header{
 }
 
 .top {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,6 +31,8 @@ header{
 }
 
 .top-contents {
+    min-width: 350px;
+
     flex: 1;
     width: 70%;
     box-sizing: border-box;
@@ -55,6 +58,8 @@ header{
 }
 
 .top-image {
+    min-width: 350;
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -94,7 +99,7 @@ header{
 
 /* ~~~~~~~~~~PORTFOLIO~~~~~~~~~~~ */
 
-.portfolio{
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,36 +110,27 @@ header{
     min-height: 775px;
     padding: 20px;
     padding-top: 50px;
+    color: rgb(220, 220, 220);
 }
 
-.portfolio .sample-image{
-    padding-left: 50px;
-}
-
-.portfolio .sample-image h2{
-    margin-left: 60px;
-    font-family: 'Libre Baskerville';
-    margin: 0;
-}
-
-
-.container{
+.container {
     padding: 15px;
+    width: 100%;
 }
 
-.container .title{
+.container .title {
     padding: 20px;
     padding-left: 45px;
     font-size: clamp(1rem, 2vw, 3rem);
 }
 
-.container .title h2{
+.container .title h2 {
     font-family: 'Libre Baskerville';
     margin: 0;
 }
 
-.container .content{
-    padding-top: 0!important;
+.container .content {
+    padding-top: 0 !important;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -142,8 +138,7 @@ header{
     justify-content: center;
 }
 
-
-.container .image{
+.container .image {
     min-width: 250px;
     margin-top: 0 !important;
     margin: 15px;
@@ -151,48 +146,45 @@ header{
     width: 55%;
 }
 
-.container .image img{
-    border-radius: 30px;
+.container .image img {
+    border-radius: 10px;
     width: clamp(100%, 70%, 60%);
-    min-width: 300px;
+    width: 100%;
     max-width: 800px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
-
 }
 
-.container .text{
-    font-family: 'Albert Sans', sans-serif;
+.container .text {
+    font-family: 'Albert Sans', sans-serif !important;
     flex: 1;
-    min-width: 350px;
+    min-width: 330px;
     width: 40%;
-    margin: 15px;
     text-align: justify;
 }
 
-.container .description{
+.container .description {
     width: 100%;
-
 }
 
-
-.container_2{
+.container_2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 20px;;
+    padding: 20px;
 }
 
-.container_2 .screenshots{
+.container_2 .screenshots {
     width: 18%;
-    min-width: 250px;
+    min-width: 120px;
     margin: 10px;
 }
 
-.container_2 .screenshots img{
-    border-radius: 15px;
+.container_2 .screenshots img {
+    width: 100%;
+    border-radius: 5px;
     max-width: 250px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.71);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.71);
 }
 
 .portfolio .divider {
@@ -201,6 +193,7 @@ header{
     height: 3px;
     background-color: #898989;
 }
+
 
 
 
@@ -354,4 +347,51 @@ html {
 /* Smooth scroll effect */
 html {
     scroll-behavior: smooth;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Small devices (320px to 440px) */
+@media (max-width: 440px) {
+    body {
+        width: 100% !important;
+        font-size: 14px;
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 20px;
+    }
+
+    .top-contents .main-content h1{
+        font-size: 2rem!important;
+        margin-bottom: 20px;
+    }
+
+    .top-contents .sub-content h3{
+        font-size: 1.5rem!important;
+    }
+
+    .top-contents .sub-content p{
+        font-size: 1rem!important;
+    }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .portfolio .container{
+    }
+
+    .portfolio .content .text{
+        width: 100%;
+    }
+    .portfolio .content .text .description{
+        padding-top: 50px;
+        width: 100%;
+    }
+
 }

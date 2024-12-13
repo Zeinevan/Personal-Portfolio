@@ -410,7 +410,7 @@ html {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Small devices (320px to 360px) */
+/* Small devices (320px to 440px) */
 @media (max-width: 440px) {
     body {
         width: 100% !important;
