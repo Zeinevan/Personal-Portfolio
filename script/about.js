@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const observer = new IntersectionObserver(revealOnScroll, {
-        threshold: 0.2, // Trigger when 30% of the element is visible
+        threshold: 0.1, // Trigger when 30% of the element is visible
     });
 
     // Select all elements you want to apply the animation to

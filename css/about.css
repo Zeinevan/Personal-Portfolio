@@ -293,11 +293,21 @@ body {
 /* ~~~~~~~~~~RESUME~~~~~~~~~~ */
 
 .resume-section{
+    display: flex;
+    justify-content: center;
     background-color:  #6a6158;
     font-family: 'Albert Sans';
     padding: 20px;
     padding-bottom: 50px;
 }
+
+.res-vordl{
+    border-radius: 15px;
+    border: solid 3px #282828;
+    padding: 20px;
+    width: fit-content;
+}
+
 .section-title{
     margin-bottom: 30px;
     font-size: 2rem;

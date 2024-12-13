@@ -123,15 +123,13 @@ header{
 }
 
 .container .image{
-    border: solid;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(255, 255, 255, 0.632);
-    width: clamp(70px, 2vw, 90px);
-    min-width: 75px;
-    min-height: 75px;
+    height: 100%;
+    width: 100%;
+    border: solid;
+    min-width: 92px;
+    min-height: 92px;
     padding: 5px;
     margin-top: 0 !important;
     margin: 15px;
@@ -309,9 +307,9 @@ html {
     }
 
     .container .image{
-        margin: 0;
-        max-width: 70px!important;
-        max-height: 70px!important;
+        width: clamp(70px, 2vw, 90px);
+        min-width: 75px !important;
+        min-height: 75px !important;
     }
 
     .container .image img{
