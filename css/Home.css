@@ -118,7 +118,6 @@ body {
     width: 40%;
     height: 450px;
     box-sizing: border-box;
-    margin: 30px;
 }
 
 #description-text {
@@ -137,15 +136,15 @@ body {
 .home_2 .image {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    min-width: 400px;
+    min-width: 300px;
     width: 50%;
 }
 
 .home_2 .image img {
     width: clamp(200px, 50%, 450px);
-    min-width: 400px;
+    min-width: 200px;
     margin: 0;
 }
 
@@ -171,6 +170,7 @@ body {
 
 .container {
     padding: 15px;
+    width: 100%;
 }
 
 .container .title {
@@ -212,9 +212,8 @@ body {
 .container .text {
     font-family: 'Albert Sans', sans-serif !important;
     flex: 1;
-    min-width: 350px;
+    min-width: 330px;
     width: 40%;
-    margin: 15px;
     text-align: justify;
 }
 
@@ -232,12 +231,13 @@ body {
 
 .container_2 .screenshots {
     width: 18%;
-    min-width: 250px;
+    min-width: 50px;
     margin: 10px;
 }
 
 .container_2 .screenshots img {
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 5px;
     max-width: 250px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.71);
 }
@@ -411,130 +411,72 @@ html {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Small devices (320px to 360px) */
-@media (max-width: 360px) {
+@media (max-width: 440px) {
     body {
+        width: 100% !important;
         font-size: 14px;
     }
 
+    .top{
+        padding-left: 0;
+    }
+
+    .hamburger-menu{
+        width: 20px ;
+        height: 20px;
+    }
+
+    .landing{
+        min-height: 200px!important;
+    }
+
     .landing .texts h1 {
-        font-size: 2.5rem;
+        font-size: 2rem !important;
     }
 
     .landing .texts h3 {
-        font-size: 1.5rem;
+        font-size: 1rem !important;
     }
 
-    .landing .texts p {
-        font-size: 1.2rem;
+    .home_2 .texts{
+        height: 300px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
     }
 
-    .home_2 .texts h1 {
-        font-size: 2.5rem;
-    }
-
-    .home_2 .texts h3 {
+    .home_2 .texts #description-text{
         font-size: 1.3rem;
     }
 
-    .home_2 .texts p {
-        font-size: 1.1rem;
+    .home_2 .texts #poetic-statement{
+        font-size: .8rem;
     }
 
-    .home_2 .image img {
-        width: 80%;
+    .home_2 .image{
+        max-width: 100% !important;
+        
     }
 
-    .container .image img {
-        width: 90%;
+    .home_2 .image img{
+        max-width:300px !important;
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .portfolio .container{
+        /* border: solid; */
     }
 
-    .container_2 .screenshots img {
-        max-width: 100%;
+    .portfolio .content .text{
+        /* border: solid; */
+        width: 100%;
     }
+    .portfolio .content .text .description{
+        padding-top: 50px;
+        width: 100%;
+    }
+
 }
 
-/* Medium devices (375px to 414px) */
-@media (max-width: 414px) {
-    body {
-        font-size: 16px;
-    }
-
-    .landing .texts h1 {
-        font-size: 3rem;
-    }
-
-    .landing .texts h3 {
-        font-size: 1.8rem;
-    }
-
-    .landing .texts p {
-        font-size: 1.5rem;
-    }
-
-    .home_2 .texts h1 {
-        font-size: 3rem;
-    }
-
-    .home_2 .texts h3 {
-        font-size: 1.6rem;
-    }
-
-    .home_2 .texts p {
-        font-size: 1.3rem;
-    }
-
-    .home_2 .image img {
-        width: 85%;
-    }
-
-    .container .image img {
-        width: 80%;
-    }
-
-    .container_2 .screenshots img {
-        max-width: 90%;
-    }
-}
-
-/* Large devices (480px and up) */
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    .landing .texts h1 {
-        font-size: 4rem;
-    }
-
-    .landing .texts h3 {
-        font-size: 2rem;
-    }
-
-    .landing .texts p {
-        font-size: 1.8rem;
-    }
-
-    .home_2 .texts h1 {
-        font-size: 4rem;
-    }
-
-    .home_2 .texts h3 {
-        font-size: 2rem;
-    }
-
-    .home_2 .texts p {
-        font-size: 1.6rem;
-    }
-
-    .home_2 .image img {
-        width: 90%;
-    }
-
-    .container .image img {
-        width: 75%;
-    }
-
-    .container_2 .screenshots img {
-        max-width: 85%;
-    }
-}
