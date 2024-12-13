@@ -363,6 +363,51 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* Apply animations for elements with the 'reveal' class */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide-in from left or right for portfolio sections */
+.image, .screenshots  {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image.animate, .screenshots.animate  {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.texts, .sample-image{
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.texts.animate, .sample-image.animate{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.container_2 .screenshots img {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.container_2 .screenshots img:hover {
+    transform: scale(1);
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Responsive Media Queries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Small devices (320px to 360px) */

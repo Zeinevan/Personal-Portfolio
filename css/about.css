@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    width: 100%;
     background-color: #5c5247;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -202,11 +203,11 @@ body {
     line-height: 1.2;
     overflow: hidden;
 }
-.chart-bar:nth-child(2) { height: 0px; } /* HTML/CSS */
-.chart-bar:nth-child(3) { height: 0px; } /* DESIGN */
-.chart-bar:nth-child(4) { height: 0px; } /* FIGMA */
-.chart-bar:nth-child(5) { height: 0px; } /* SLEEPING */
-.chart-bar:nth-child(6) { height: 0px; } /* DRAWING */
+.chart-bar:nth-child(2) { height: 190px; } /* HTML/CSS */
+.chart-bar:nth-child(3) { height: 150px; } /* DESIGN */
+.chart-bar:nth-child(4) { height: 100px; } /* FIGMA */
+.chart-bar:nth-child(5) { height: 250px; } /* SLEEPING */
+.chart-bar:nth-child(6) { height: 290px; } /* DRAWING */
 .chart-label {
     margin-top: 5px;
 }
@@ -291,13 +292,18 @@ body {
 /* ~~~~~~~~~~RESUME~~~~~~~~~~ */
 
 .resume-section{
+    background-color:  #6a6158;
     font-family: 'Albert Sans';
     padding: 20px;
-    width: 100%;
+    padding-bottom: 50px;
 }
 .section-title{
     font-size: 2rem;
     text-align: center;
+}
+
+.section-title h3{
+    margin: 0;
 }
 .resume-content{
     display: flex;
@@ -316,7 +322,6 @@ body {
     flex-direction: column;  
 }
 .block{
-    padding: 20px;
     background-color: #282828;
     font-weight: bold;
     width: 40%;
@@ -330,61 +335,79 @@ body {
 }
 
 .block a{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
     text-decoration: none;
     color: white;
 }
 
 
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* General hidden state */
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+
+/* Footer Social Icon Hover Effect */
+.social-icons img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
-/* Fade-in animation */
-.visible {
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply animations for elements with the 'reveal' class */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.animate {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Bar graph animation */
-.chart-bar {
-    width: 18%;
-    background-color: #282828;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 5px;
-    position: relative;
-    font-size: 12px;
-    line-height: 1.2;
-    overflow: hidden;
-    height: 0; /* Initially hide bars */
-    transition: height 1s ease-in-out;
-}
-
-.chart-bar.visible {
-    height: auto;
-}
-
-/* Sliding image animation */
-.char-image img {
-    width: 100%;
-    opacity: 0;
+/* Slide-in from left or right for portfolio sections */
+.top-image, .pie, .char-image, .block {
     transform: translateX(-50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.char-image img.visible {
-    opacity: 1;
+.top-image.animate, .pie.animate, .char-image.animate, .block.animate {
     transform: translateX(0);
+    opacity: 1;
 }
 
-.chart-bar:nth-child(2) { height: 190px; } /* HTML/CSS */
-.chart-bar:nth-child(3) { height: 150px; } /* DESIGN */
-.chart-bar:nth-child(4) { height: 100px; } /* FIGMA */
-.chart-bar:nth-child(5) { height: 250px; } /* SLEEPING */
-.chart-bar:nth-child(6) { height: 290px; } /* DRAWING */
+.main-contents, .sub-content, .section-description, .chart-levels, .chart-title, .char-header, .char-char, .resume-vordl p {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.main-contents.animate, .sub-content.animate, .section-description.animate, .chart-levels.animate, .chart-title.animate, .char-header.animate, .char-char.animate, .resume-vordl p.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.chart-bar {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.chart-bar.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+

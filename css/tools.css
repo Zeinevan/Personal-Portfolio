@@ -198,7 +198,7 @@ html {
 .reveal {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .reveal.animate {
@@ -210,7 +210,7 @@ html {
 .container .image {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .container .image.animate {
@@ -221,7 +221,7 @@ html {
 .container .text {
     transform: translateX(50px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .container .text.animate {

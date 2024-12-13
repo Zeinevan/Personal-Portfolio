@@ -13,14 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       rootMargin: "0px 0px -50px 0px",
     };
   
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, options);
+    const observer = new IntersectionObserver(revealOnScroll, {
+      threshold: 0.3, // Trigger when 30% of the element is visible
+    });
   
     sections.forEach((section) => {
       section.classList.add("fade-out");
@@ -48,5 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
       menuLines[1].classList.toggle("line2");
       menuLines[2].classList.toggle("line3");
     });
+
+    // Function to add the class for animation when the element is in view
+    const revealOnScroll = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+  
+    // Select all elements you want to apply the animation to
+    const elementsToAnimate = document.querySelectorAll('.reveal');
+    elementsToAnimate.forEach(element => observer.observe(element));
   });
   
