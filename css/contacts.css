@@ -262,6 +262,13 @@ html {
         font-size: 14px;
     }
 
+    header{
+        background-image: url(http://127.0.0.1:5500/res/wallpaper_q.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .top {
         padding: 0;
         display: flex;
